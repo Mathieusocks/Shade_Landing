@@ -5,41 +5,110 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SHADE APP</title>
+    <link rel="icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./materialize/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+
+
 </head>
 <body>
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+<nav role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="#">Navbar Link</a></li>
+            <li><a href="#">Navbar Link</a></li>
+            <li><a href="#">Navbar Link</a></li>
         </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Navbar Link</a></li>
+            <li><a href="#">Navbar Link</a></li>
+            <li><a href="#">Navbar Link</a></li>
         </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+<div class="back">
+    <div id="index-banner">
+        <div class="section no-pad-bot">
+            <div class="container" id="pitch">
+                <br><br>
+                <h1 class="header center teal-deep-orange  white-text">SHADE</h1>
+                <div class="row center">
+                    <h5 class="header col s12  white-text light">Découvrez ce que votre corps à à vous offrir</h5>
+                </div>
 
-<div id="index-banner">
-    <img  id="responsive-background" class="parallax-container" src="./assets/images/back.jpg">
+
+                <div class="row center">
+                    <a href="#page1" id="download-button" class="btn-large waves-effect waves-light deep-orange darken-4 scrollTo" >C'est par la</a>
+
+                </div>
+
+
+                <br><br>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<br><br><br><br><br><br>
+
+
+<div class="container">
+    <div class="row" id="page1">
+        <h2 class="thin center">why ?</h2>
+        <div class="col s12 m4">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="./assets/images/image1.png" alt="">
+                    <span class="card-title">My Philosophy</span>
+                </div>
+                <div class="card-content">I always focusing on the performance and My goal is to create user-friendly and timeless websites that attract human eyes.</div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="./assets/images/image1.png" alt="">
+                    <span class="card-title">My Philosophy</span>
+
+                </div>
+                <div class="card-content">I always focusing on the performance and My goal is to create user-friendly and timeless websites that attract human eyes.</div>
+
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="./assets/images/image1.png" alt="">
+                    <span class="card-title">My Philosophy</span>
+
+                </div>
+                <div class="card-content">I always focusing on the performance and My goal is to create user-friendly and timeless websites that attract human eyes.</div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="row" id="page2">
+        <h2 class="thin center">why ?</h2>
+        <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/HjQdJXfXnmA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+    </div>
+
 </div>
 
-<!--<footer class="page-footer">
+
+<footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -59,12 +128,16 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2017 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
-</footer> -->
+</footer>
 
 
 </body>
+<script>
+    $(".button-collapse").sideNav();
+</script>
+
 </html>
